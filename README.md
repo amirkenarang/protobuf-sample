@@ -1,5 +1,11 @@
 # Proto
 
-## How build proto files with protoc
+## Instalation and Build
 
-..\protoc-3.19.4-win64\bin\protoc.exe --js_out=import_style=commonjs,binary:. employees.proto
+On **windows** install [protoc](https://github.com/protocolbuffers/protobuf/releases) then run this command:
+
+`..\protoc-3.19.4-win64\bin\protoc.exe --js_out=import_style=commonjs,binary:. employees.proto`
+
+on **Linux** isntall with `sudo apt install protobuf-compiler`. then run:
+
+`protoc --js_out=import_style=commonjs,binary:. employees.proto`
